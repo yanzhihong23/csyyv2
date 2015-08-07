@@ -3,6 +3,7 @@
 var path = require('path');
 var gulp = require('gulp');
 var conf = require('./conf');
+var cdnify = require('gulp-cdnify');
 
 var $ = require('gulp-load-plugins')({
   pattern: ['gulp-*', 'main-bower-files', 'uglify-save-license', 'del']
@@ -84,6 +85,16 @@ gulp.task('other', function () {
   ])
     .pipe(fileFilter)
     .pipe(gulp.dest(path.join(conf.paths.dist, '/')));
+});
+
+gulp.task('cdnify', function () {
+  return gulp.src([
+    'dist/**/*.{css,html,js}'
+  ])
+    .pipe(cdnify({
+      base: 'http://www.csyeye.com/'
+    }))
+    .pipe(gulp.dest('dist/'))
 });
 
 gulp.task('clean', function (done) {

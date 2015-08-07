@@ -1,5 +1,5 @@
 #help{
-	background: url(../../../assets/images/help/02.jpg) no-repeat 0 -100px;
+	background: url(/assets/images/help/02.jpg) no-repeat 0 -100px;
 	padding: 30px 0;
 	.container{
 		position: relative;
@@ -7,7 +7,7 @@
 	.side-menu{
 		width: 250px;
 		height: 222px;
-		background: url(../../../assets/images/help/03.jpg) no-repeat;
+		background: url(/assets/images/help/03.jpg) no-repeat;
 		background-size: 100% 100%;
 		position: absolute;
 		&+.content{
