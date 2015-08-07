@@ -1,0 +1,164 @@
+
+/**
+ *  Do not remove this comments bellow. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+$white: #fff;
+$red: #e5514f;
+$border-color: #ddd;
+
+body, .container{
+  min-width: 1200px;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.panel {
+  margin-top: 50px;
+}
+
+.th {
+  width: 100%;
+  height: 200px;
+
+  img.right {
+    width: 50px;
+  }
+}
+
+a, a:hover, a:focus{
+  text-decoration: none;
+  outline: none;
+}
+
+body>header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: $white;
+  z-index: 100;
+  &+.main-content{
+    margin-top: 136px;
+  }
+  .top{
+    line-height: 35px;
+    color: $white;
+    background: $red;
+    padding-left: 30px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+  }
+  border-bottom: solid 1px #ddd;
+}
+.banner{
+  height: 350px;
+  background: #2f54b4 url(../../../assets/images/banner.jpg) no-repeat center;
+  .qr{
+    height: 100%;
+    background: url(../../../assets/images/qr-download.png) no-repeat center right;
+  }
+}
+
+.what{
+  font-family: "Microsoft YaHei";
+  padding: 50px 100px;
+  h1{
+    font-size: 36px;
+    color: rgb( 111, 127, 134 );
+    padding-bottom: 30px;
+    font-weight: bold;
+  }
+  p{
+    color: rgb( 111, 127, 134 );
+    font-size: 18px;
+    text-indent: 2em;
+    line-height: 2;
+  }
+}
+
+.yield{
+  height: 521px;
+  background: url(../../../assets/images/yield-compare.png) no-repeat center;
+}
+
+.security{
+  height: 459px;
+  background: url(../../../assets/images/security.png) no-repeat center;
+}
+
+.cooperation{
+  height: 340px;
+  background: url(../../../assets/images/cooperation.png) no-repeat center;
+}
+
+.download{
+  height: 354px;
+  background: #f46867 url(../../../assets/images/qr-2.png) no-repeat center;
+}
+
+body>footer{
+  border-top: solid 1px #ddd;
+  background: #f6f6f6;
+  ul{
+    list-style: none;
+    li{
+      display: block;
+      float: left;
+      &:last-child a:after{
+        display: none;
+      }
+      a{
+        display: block;
+        padding: 20px;
+        line-height: 60px;
+        position: relative;
+        color: #a0a0a0;
+        &:hover{
+          color: $red;
+        }
+        &:after{
+          content: '';
+          display: block;
+          width: 1px;
+          height: 10px;
+          background: #a0a0a0;
+          position: absolute;
+          top: 50%;
+          margin-top: -5px;
+          right: 0;
+        }
+      }
+    }
+  }
+  .cs-number{
+    font-size: 30px;
+    font-family: "Microsoft YaHei";
+    color: rgb( 108, 108, 108 );
+    margin-top: 5px;
+  }
+  .work-time, .copyright{
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    color: rgb( 171, 171, 171 );
+  }
+  .copyright{
+    border-top: dashed 1px #ddd;
+    line-height: 100px;
+    font-size: 14px;
+  }
+}
+
+/**
+ *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector

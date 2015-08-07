@@ -1,0 +1,75 @@
+<!doctype html>
+<html ng-app="projects">
+  <head>
+    <meta charset="utf-8">
+    <title>财神爷爷</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+
+    <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp/serve,src}) styles/app.css -->
+    <!-- inject:css -->
+    <!-- css files will be automatically insert here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header>
+      <div class="top">
+        <div class="container white">
+          客服热线: 4000-646-668
+        </div>
+      </div>
+      <div class="container">
+        <acme-navbar />
+      </div>
+    </header>
+    
+    <div ui-view class="main-content"></div>
+
+    <footer>
+      <div class="container">
+        <ul class="list-unstyled">
+          <li><a ui-sref="about.company">关于我们</a></li>
+          <!-- <li><a ui-sref="news">媒体报道</a></li> -->
+          <li><a ui-sref="about.join">加入我们</a></li>
+          <li><a ui-sref="about.contact">联系我们</a></li>
+        </ul>
+        <div class="pull-right text-center">
+          <div class="cs-number">客服电话：4000-646-668</div>
+          <div class="work-time">工作日(9:00-21:00)  节假日(9:00-16:00)</div>
+        </div>
+      </div>
+      <div class="row copyright text-center">
+        财神爷爷的运营技术支持由上海诺诺镑客金融信息服务有限公司提供      |      Copyright © nonobank.com 沪ICP备13003999号
+      </div>
+    </footer>
+
+    <!-- build:js(src) scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- run `gulp inject` to automatically populate bower script dependencies -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+    <!-- inject:js -->
+    <!-- js files will be automatically insert here -->
+    <!-- endinject -->
+
+    <!-- inject:partials -->
+    <!-- angular templates will be automatically converted in js and inserted here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+
+  </body>
+</html>

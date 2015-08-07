@@ -1,0 +1,18 @@
+<article id="about">
+	<div class="container">
+		<aside class="side-menu">
+			<ul class="list-unstyled text-center">
+				<li ng-class="{active: state==='about.company'}"><a ui-sref="about.company">公司介绍</a></li>
+				<li ng-class="{active: state==='about.team'}"><a ui-sref="about.team">团队介绍</a></li>
+				<li ng-class="{active: state==='about.dynamic'}"><a ui-sref="about.dynamic">公司动态</a></li>
+				<li ng-class="{active: state==='about.join'}"><a ui-sref="about.join">加入我们</a></li>
+				<li ng-class="{active: state==='about.contact'}"><a ui-sref="about.contact">联系我们</a></li>
+				<!-- <li ng-class="{active: state==='about.notice'}"><a ui-sref="about.notice">平台公告</a></li> -->
+			</ul>
+		</aside>
+		<section class="content">
+			<header>{{title}}</header>
+			<div ui-view></div>
+		</section>
+	</div>
+</article>

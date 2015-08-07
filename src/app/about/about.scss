@@ -1,0 +1,66 @@
+#about{
+	padding-top: 30px;
+	.container{
+		position: relative;
+		font-size: 14px;
+	  font-family: "Microsoft YaHei";
+	  color: rgb( 108, 108, 108 );
+	  line-height: 2.143;
+	}
+	.side-menu{
+		position: absolute;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  width: 220px;
+	  ul{
+	  	border: solid 1px $border-color;
+	  	margin-top: -1px;
+	  }
+	  li.active a{
+	  	color: $red;
+	  }
+	  li:not(:last-child){
+	  	border-bottom: solid 1px $border-color;
+	  }
+	  a{
+	  	display: block;
+	  	height: 100%;
+	  	line-height: 46px;
+	  	color: #000;
+	  }
+	  &+.content{
+	  	margin-left: 260px;
+	  	min-height: 600px;
+	  	border: solid 1px $border-color;
+	  	padding: 0 30px;
+	  	margin-bottom: 50px;
+	  	header{
+	  		border-bottom: solid 1px $border-color;
+	  		line-height: 52px;
+	  		padding-left: 10px;
+	  		font-size: 20px;
+	  		margin-bottom: 20px;
+	  		&:after{
+	  			content: "";
+	  			display: block;
+	  			height: 4px;
+	  			width: 78px;
+	  			background: $red;
+	  		}
+	  	}
+	  }
+	}
+	.desc{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	p{
+		text-indent: 2em;
+	}
+	.team, .dynamic{
+		li{
+			padding-bottom: 20px;
+		}
+	}
+}

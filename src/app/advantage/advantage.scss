@@ -1,0 +1,56 @@
+#advantage{
+	background: #fbfbfb;
+	.container{
+		width: 1200px;
+		margin: 0 auto;
+		background: #fff;
+		padding: 0 100px;
+	}
+	.row{
+		padding: 60px 0;
+		.columns{
+			min-height: 215px;
+		}
+	}
+	.title{
+		font-size: 24px;
+		font-family: "Lantinghei SC";
+		color: rgb( 51, 181, 227 );
+		line-height: 1.4;
+		padding: 14px 0;
+		&.green{
+			color: rgb( 84, 179, 109 );
+		}
+		strong{
+			color: #ff9933;
+		}
+		&.no-desc{
+			padding: 80px 0;
+		}
+	}
+	.desc{
+		font-size: 14px;
+	  font-family: "Microsoft YaHei";
+	  color: rgb( 108, 108, 108 );
+	  line-height: 1.72;
+	  padding-right: 65px;
+	}
+	.tech-sec{
+		height: 560px;
+		background: url(../../../assets/images/advantage/ad-05.png) no-repeat center;
+	}
+	.img-01{
+		background: url(../../../assets/images/advantage/ad-01.png) no-repeat center;
+	}
+	.img-02{
+		background: url(../../../assets/images/advantage/ad-02.png) no-repeat center;
+	}
+	.img-03{
+		height: 260px;
+		background: url(../../../assets/images/advantage/ad-03.png) no-repeat center;
+	}
+	.img-04{
+		height: 240px;
+		background: url(../../../assets/images/advantage/ad-04.png) no-repeat center;
+	}
+}

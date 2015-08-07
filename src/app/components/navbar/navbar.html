@@ -1,0 +1,16 @@
+<nav class="top-bar row">
+  <a ui-sref="home" class="logo">
+    <span class="helper"></span>
+    <img src="assets/images/logo.png" alt="">
+  </a>
+
+  <section class="top-bar-section">
+    <ul class="nav nav-justified">
+      <li ng-class="{active: state==='home'}"><a href="#/">首页</a></li>
+      <li ng-class="{active: state==='advantage'}"><a ui-sref="advantage">核心优势</a></li>
+      <!-- <li ng-class="{active: state==='news'}"><a ui-sref="news">媒体报道</a></li> -->
+      <li ng-class="{active: state==='about'}"><a ui-sref="about.company">关于我们</a></li>
+      <li ng-class="{active: state==='help'}"><a ui-sref="help">帮助中心</a></li>
+    </ul>
+  </section>
+</nav>

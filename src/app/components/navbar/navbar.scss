@@ -1,0 +1,59 @@
+.acme-navbar-text{
+  color: #000;
+}
+
+.top-bar{
+	$height: 100px;
+	height: $height;
+	.helper {
+	  display: inline-block;
+	  height: 100%;
+	  vertical-align: middle;
+	}
+	.logo{
+		float: left;
+		height: 100%;
+		vertical-align: middle;
+		cursor: pointer;
+		display: block;
+		image{
+			vertical-align: middle;
+		}
+	}
+	.top-bar-section{
+		height: $height;
+		ul{
+			float: right;
+			width: 50%;
+			li{
+				a{
+					color: #000;
+					&:hover{
+						background: $red;
+						color: #fff;
+					}
+					&:focus{
+						background: #fff;
+					}
+				}
+				&.active{
+					a{
+						color: $red;
+						&:hover{
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+		ul li:not(.has-form) a:not(.button){
+			line-height: 80px;
+			text-align: center;
+			font-size: 18px;
+		}
+	}
+}
+
+
+
+
