@@ -6,8 +6,14 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
+  function MainController($scope, $timeout, webDevTec, toastr) {
     var vm = this;
+
+    $scope.slides = [
+      {bgName: 'banner-01', image: 'assets/images/banner.jpg'},
+      {bgName: 'banner-02', image: 'assets/images/banner-02.jpg'},
+      {bgName: 'banner-03', image: 'assets/images/banner-03.jpg'}
+    ];
 
     vm.awesomeThings = [];
     vm.classAnimation = '';

@@ -1,3 +1,64 @@
+.banner-01{
+	background: #2f54b4 url(../../../assets/images/banner.jpg) no-repeat center;
+}
+
+.banner-02{
+	background: #2f54b4 url(../../../assets/images/banner-02.jpg) no-repeat center;
+}
+
+.banner-03{
+	background: #2f54b4 url(../../../assets/images/banner-03.jpg) no-repeat center;
+}
+
+.carousel-control, .carousel-indicators{
+	display: none;
+}
+
+.banner{
+  position: relative;
+  height: 350px;
+  .qr{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: url(../../../assets/images/qr-download.png) no-repeat center right;
+  }
+}
+
 .what{
-	color: #6f7f86;
+  font-family: "Microsoft YaHei";
+  padding: 50px 100px;
+  color: #6f7f86;
+  h1{
+    font-size: 36px;
+    color: rgb( 111, 127, 134 );
+    padding-bottom: 30px;
+    font-weight: bold;
+  }
+  p{
+    color: rgb( 111, 127, 134 );
+    font-size: 18px;
+    text-indent: 2em;
+    line-height: 2;
+  }
+}
+
+.yield{
+  height: 521px;
+  background: url(../../../assets/images/yield-compare.png) no-repeat center;
+}
+
+.security{
+  height: 459px;
+  background: url(../../../assets/images/security.png) no-repeat center;
+}
+
+.cooperation{
+  height: 340px;
+  background: url(../../../assets/images/cooperation.png) no-repeat center;
+}
+
+.download{
+  height: 354px;
+  background: #f46867 url(../../../assets/images/qr-2.png) no-repeat center;
 }
