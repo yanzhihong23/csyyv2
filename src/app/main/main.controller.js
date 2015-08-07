@@ -10,9 +10,10 @@
     var vm = this;
 
     $scope.slides = [
-      {bgName: 'banner-01', image: 'assets/images/banner.jpg'},
-      {bgName: 'banner-02', image: 'assets/images/banner-02.jpg'},
-      {bgName: 'banner-03', image: 'assets/images/banner-03.jpg'}
+      {bgName: 'banner-01'},
+      {bgName: 'banner-02'},
+      {bgName: 'banner-03'},
+      {bgName: 'banner-04'}
     ];
 
     vm.awesomeThings = [];
