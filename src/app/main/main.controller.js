@@ -10,6 +10,7 @@
     var vm = this;
 
     $scope.slides = [
+      {bgName: 'banner-05'},
       {bgName: 'banner-01'},
       {bgName: 'banner-02'},
       {bgName: 'banner-03'},
